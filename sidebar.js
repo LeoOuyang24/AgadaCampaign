@@ -1,20 +1,11 @@
-export let sidebar = L.control();
+//creates and handles the sidebar
 
-function loadFile(filePath) {
-  var result = null;
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", filePath, false);
-  xmlhttp.send();
-  if (xmlhttp.status==200) {
-    result = xmlhttp.responseText;
-  }
-  return result;
-}
+export let sidebar = L.control();
 
 sidebar.onAdd = function (map) {
     this.div = L.DomUtil.create('div'); // create a div with a class "info"
     this.div.id = "sidebar"
-    this.update(jsyaml.load(loadFile("./yaml/goldwall.yaml")))
+    this.div.style.display = "none"
     return this.div;
 };
 
@@ -23,8 +14,10 @@ sidebar.update = function (props) {
     this.div.innerHTML = `
         <div id="header">
             <img src="${props.img}">
-            <h1>${props.name}</h1>
-            <h3>${props.type}</h3>
+            <h1>${props.name}</h1>  
+            <h3>${props.type}</h3>`
+             + (props.ruler ? `<h3>Ruled by ${props.ruler}</h3>` : "") + `
+
         </div>
         <div id="text">
             ${props.text}

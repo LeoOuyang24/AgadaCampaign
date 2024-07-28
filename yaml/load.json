@@ -1,0 +1,54 @@
+{
+	"array":[
+		{
+			"name": "goldwall",
+			"pos": [0.55,0.73]
+		},
+		{
+			"name": "chokehold",
+			"pos": [0.56,0.64]	
+		},
+		{
+			"name": "southport",
+			"pos": [0.529,0.7]
+		},
+		{
+			"name": "cornhill",
+			"pos": [0.56,0.612]
+		},
+		{
+			"name":"idyllwood",
+			"pos": [0.57,0.68]
+		},
+		{
+			"name":"tarindis",
+			"pos": [0.6,0.5]
+		},
+		{
+			"name":"fool's edge",
+			"pos":[0.515,0.6]
+		},
+		{
+			"name":"grand marsh",
+			"pos":[0.56,0.57]
+		},
+		{
+			"name":"aksh-bakar",
+			"pos":[0.59,0.535]
+		},
+		{
+			"name": "welton",
+			"pos": [0.40,0.52]
+		},
+		{
+			"name": "westfall",
+			"pos": [0.42,0.43]
+		},
+		{
+			"name":"arden's anchor",
+			"pos":[0.5,0.35]
+		}
+
+	]
+
+}
