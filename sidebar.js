@@ -14,7 +14,7 @@ function loadFile(filePath) {
 sidebar.onAdd = function (map) {
     this.div = L.DomUtil.create('div'); // create a div with a class "info"
     this.div.id = "sidebar"
-    this.update(jsyaml.load(loadFile("/yaml/goldwall.yaml")))
+    this.update(jsyaml.load(loadFile("./yaml/goldwall.yaml")))
     return this.div;
 };
 

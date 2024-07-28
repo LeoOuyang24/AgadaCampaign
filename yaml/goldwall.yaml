@@ -1,5 +1,5 @@
 ---
- img: "../sprites/backgrounds/goldwall.jpg"
+ img: "sprites/backgrounds/goldwall.jpg"
  name: "Goldwall"
  type: "Kingdom"
  text: >
