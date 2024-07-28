@@ -19,9 +19,5 @@ function onMapClick(e) {
     style.display = (style.display == null || style.display != "none" ? "none" : "initial") ;
 }
 
-$.getJSON('.', data => {
-    console.log(data); //["doc1.jpg", "doc2.jpg", "doc3.jpg"] 
-});
-
 marker.on('click', onMapClick);
 sidebar.addTo(map)
