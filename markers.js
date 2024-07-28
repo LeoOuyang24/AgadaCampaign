@@ -1,7 +1,7 @@
 import {sidebar} from "./sidebar.js"
 import {width, height} from "./main.js"
 import * as icons from "./icons.js";
-import places from "./yaml/load.json"  with { type: 'json' };  
+//import places from "./yaml/load.json"  with { type: 'json' };  
 
 //creates and loads all markers based on the yaml files
 
@@ -40,6 +40,9 @@ function loadMarker(name, pos)
 //loads all our markers
 export function loadMarkers(map)
 {
+
+   var places = JSON.parse(loadFile("./yaml/load.json"))
+
    var points = ['M'];
    for (let i = 0; i < places.array.length; i ++)
    {
