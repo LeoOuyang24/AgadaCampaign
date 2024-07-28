@@ -5,6 +5,10 @@
 			"pos": [0.55,0.73]
 		},
 		{
+			"name": "green dot",
+			"pos": [0.74,0.64]
+		},
+		{
 			"name": "chokehold",
 			"pos": [0.56,0.64]	
 		},
@@ -18,7 +22,7 @@
 		},
 		{
 			"name":"idyllwood",
-			"pos": [0.57,0.68]
+			"pos": [0.571,0.68]
 		},
 		{
 			"name":"tarindis",
@@ -33,8 +37,24 @@
 			"pos":[0.56,0.57]
 		},
 		{
+			"name":"y-staff",
+			"pos":[0.55,0.55]
+		},
+		{
 			"name":"aksh-bakar",
 			"pos":[0.59,0.535]
+		},
+		{
+			"name": "stoneteeth mountains",
+			"pos": [0.63,0.5]
+		},
+		{
+			"name": "edgar's crossing",
+			"pos": [0.47,0.515]
+		},
+		{
+			"name":"anachreon",
+			"pos":[0.52,0.46]
 		},
 		{
 			"name": "welton",
@@ -43,6 +63,14 @@
 		{
 			"name": "westfall",
 			"pos": [0.42,0.43]
+		},
+		{
+			"name": "northern grasp",
+			"pos": [0.55,0.35]
+		},
+		{
+			"name": "bluewald",
+			"pos": [0.48,0.35]
 		},
 		{
 			"name":"arden's anchor",
