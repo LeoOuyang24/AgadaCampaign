@@ -61,6 +61,14 @@
 			"pos": [0.40,0.52]
 		},
 		{
+			"name": "chasm",
+			"pos": [0.5,0.44]
+		},
+		{
+			"name": "alliance bridge",
+			"pos" : [0.477,0.44]
+		},
+		{
 			"name": "westfall",
 			"pos": [0.42,0.43]
 		},
