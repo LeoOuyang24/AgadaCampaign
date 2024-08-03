@@ -148,6 +148,10 @@
 			"pos": [0.5,0.44]
 		},
 		{
+			"name": "alliance bridge",
+			"pos" : [0.471,0.44]
+		},
+		{
 			"name": "crossroads",
 			"pos": [0.47,0.4],
 			"paths":[
