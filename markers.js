@@ -1,6 +1,7 @@
 import {sidebar} from "./sidebar.js"
 import {width, height} from "./main.js"
 import * as icons from "./icons.js";
+import {loadPaths} from "./paths.js";
 //import places from "./yaml/load.json"  with { type: 'json' };  
 
 //creates and loads all markers based on the yaml files
@@ -26,12 +27,17 @@ function onMapClick(e) {
     sidebar.update(this.props)
 }
 
+//convert json position to lat lng
+export function posToLatLng(pos)
+{
+   return [pos[0]*height, pos[1]*width]
+}
 
 //give the city name, position
 function loadMarker(name, pos)
 {
    let parsed = jsyaml.load(loadFile(`./yaml/${name}.yaml`))
-   let marker =  L.marker([pos[0]*height, pos[1]*width],{icon: icons.getIcon(parsed.type)})
+   let marker =  L.marker(posToLatLng(pos),{icon: icons.getIcon(parsed.type)})
    marker.props = parsed
    marker.on('click',onMapClick)
    return marker
@@ -43,22 +49,12 @@ export function loadMarkers(map)
 
    var places = JSON.parse(loadFile("./yaml/load.json"))
 
-   var points = ['M'];
    for (let i = 0; i < places.array.length; i ++)
    {
       let obj = places.array[i]
       let marker = loadMarker(obj.name,obj.pos)
       let latlng = marker.getLatLng()
-      let point = [latlng.lat,latlng.lng]
-      if (i==0)
-      {
-         points.push(point)
-      }
-      if (i%2 == 0)
-      {
-         points.push('S')
-      }
-      points.push(point)
+      loadPaths(obj,map,places)
       marker.addTo(map)
    }
    //console.log(points)

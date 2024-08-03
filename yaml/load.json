@@ -2,7 +2,41 @@
 	"array":[
 		{
 			"name": "goldwall",
-			"pos": [0.55,0.73]
+			"pos": [0.55,0.73],
+			"paths": [
+				{
+					"distance": "5 hours",
+					"points":["chokehold"]
+				},
+				{
+					"distance": "4 hours",
+					"points": ["idyllwood"]
+				},
+
+				{
+					"distance": "8 hours",
+					"points":["L",[0.6,0.7],"S",[0.61,0.67],"idyllwood"]
+				},
+				{
+					"distance": "2 hours",
+					"points":["southport"]
+				}
+			]
+		},
+		{
+			"name":"idyllwood",
+			"pos": [0.577,0.671],
+			"paths": [
+				{
+					"distance" : "2 hours",
+					"points": ["chokehold"]
+				}
+
+			]
+		},
+		{
+			"name": "southport",
+			"pos": [0.529,0.7]
 		},
 		{
 			"name": "green dot",
@@ -10,40 +44,78 @@
 		},
 		{
 			"name": "chokehold",
-			"pos": [0.56,0.64]	
-		},
-		{
-			"name": "southport",
-			"pos": [0.529,0.7]
+			"pos": [0.56,0.64],
+			"paths": [
+				{
+					"distance": "1 hours",
+					"points": ["cornhill"]
+				}
+			]	
 		},
 		{
 			"name": "cornhill",
-			"pos": [0.56,0.612]
+			"pos": [0.56,0.612],
+			"paths": [
+				{
+					"distance": "1.5 hours",
+					"points": ["fool's edge"]
+				},
+				{
+					"distance" : "4 hours",
+					"points": ["S",[0.53,0.6],"y-staff"]
+				}
+			]
 		},
 		{
-			"name":"idyllwood",
-			"pos": [0.571,0.68]
+			"name":"fool's edge",
+			"pos":[0.515,0.6],
+			"paths":[
+				{
+					"boat": true,
+					"distance": "8 hours",
+					"points": ["S",[0.47,0.6],"welton"]
+				},
+				{
+					"boat": true,
+					"distance": "2 hours",
+					"points": ["S",[0.47,0.59],"southport"]
+				}
+			]
+		},
+		{
+			"name":"isla hashasa",
+			"pos":[0.47,0.67]
+		},
+		{
+			"name":"y-staff",
+			"pos":[0.55,0.55],
+			"paths": [
+				{
+					"distance": "3 hours",
+					"points": ["aksh-bakar"]
+				}
+			]
+		},
+		{
+			"name":"aksh-bakar",
+			"pos":[0.59,0.535],
+			"paths": [
+				{
+					"distance": "2 hours",
+					"points": ["tarindis"]
+				}
+			]
 		},
 		{
 			"name":"tarindis",
 			"pos": [0.6,0.5]
 		},
 		{
-			"name":"fool's edge",
-			"pos":[0.515,0.6]
-		},
-		{
 			"name":"grand marsh",
 			"pos":[0.56,0.57]
 		},
-		{
-			"name":"y-staff",
-			"pos":[0.55,0.55]
-		},
-		{
-			"name":"aksh-bakar",
-			"pos":[0.59,0.535]
-		},
+
+
 		{
 			"name": "stoneteeth mountains",
 			"pos": [0.63,0.5]
@@ -58,7 +130,14 @@
 		},
 		{
 			"name": "welton",
-			"pos": [0.40,0.52]
+			"pos": [0.40,0.52],
+			"paths":[
+				{
+					"boat": true,
+					"distance": "4 hours",
+					"points": ["S",[0.35,0.455],"westfall"]
+				}
+			]
 		},
 		{
 			"name": "chasm",
@@ -66,11 +145,36 @@
 		},
 		{
 			"name": "alliance bridge",
-			"pos" : [0.477,0.44]
+			"pos" : [0.471,0.44]
+		},
+		{
+			"name": "crossroads",
+			"pos": [0.47,0.4],
+			"paths":[
+				{
+					"distance": "5 hours",
+					"points": ["S",[0.47,0.42],"westfall"]
+				},
+				{
+					"distance": "4 hours",
+					"points": ["S",[0.53,0.4],"bluewald"]
+				},
+				{
+					"distance": "4.5 hours",
+					"points": ["S",[0.53,0.4],"arden's anchor"]
+				}
+			]
 		},
 		{
 			"name": "westfall",
-			"pos": [0.42,0.43]
+			"pos": [0.42,0.43],
+			"paths":[
+				{
+					"boat": true,
+					"distance": "8 hours",
+					"points": ["S",[0.35,0.4],[0.4,0.35],"S",[0.48,0.32],"bluewald"]
+				}
+			]
 		},
 		{
 			"name": "northern grasp",
@@ -78,11 +182,21 @@
 		},
 		{
 			"name": "bluewald",
-			"pos": [0.48,0.35]
+			"pos": [0.48,0.33]
 		},
 		{
 			"name":"arden's anchor",
-			"pos":[0.5,0.35]
+			"pos":[0.5,0.35],
+			"paths":[
+				{
+					"distance": "1.5 hours",
+					"points": ["bluewald"]
+				},
+				{
+					"distance": "5 hours",
+					"points": ["northern grasp"]
+				}
+			]
 		}
 
 	]
