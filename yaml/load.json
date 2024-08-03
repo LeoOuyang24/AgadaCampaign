@@ -24,6 +24,10 @@
 			]
 		},
 		{
+			"name": "emerald",
+			"pos": [0.6,0.7]
+		},
+		{
 			"name":"idyllwood",
 			"pos": [0.577,0.671],
 			"paths": [
@@ -156,12 +160,16 @@
 					"points": ["S",[0.47,0.42],"westfall"]
 				},
 				{
-					"distance": "4 hours",
+					"distance": "4.5 hours",
 					"points": ["S",[0.53,0.4],"bluewald"]
 				},
 				{
-					"distance": "4.5 hours",
+					"distance": "4 hours",
 					"points": ["S",[0.53,0.4],"arden's anchor"]
+				},
+				{
+					"distance": "2.5 hours",
+					"points": ["meadton"]
 				}
 			]
 		},
@@ -175,6 +183,10 @@
 					"points": ["S",[0.35,0.4],[0.4,0.35],"S",[0.48,0.32],"bluewald"]
 				}
 			]
+		},
+		{
+			"name": "meadton",
+			"pos": [0.45,0.35]
 		},
 		{
 			"name": "northern grasp",
