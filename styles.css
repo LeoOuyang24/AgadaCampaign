@@ -9,6 +9,10 @@
     height: 100vh;
 }
 
+#sidebar img {
+    width:100%;
+}
+
 #header > *{
   display: block;
   margin-left: auto;

@@ -6,6 +6,10 @@ sidebar.onAdd = function (map) {
     this.div = L.DomUtil.create('div'); // create a div with a class "info"
     this.div.id = "sidebar"
     this.div.style.display = "none"
+    this.div.addEventListener("wheel", (event) => {event.stopPropagation();}); //allows mouse scroll
+    this.div.addEventListener("touchmove", (event) => {event.stopPropagation();}); //allows mobile phone scroll 
+    this.div.addEventListener("click", (event) => {event.stopPropagation();}) //prevents clicking on the sidebar clearing the sidebar
+
     return this.div;
 };
 
